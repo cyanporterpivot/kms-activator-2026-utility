@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0e17"/>
+      <stop offset="0.55" stop-color="#0d1524"/>
+      <stop offset="1" stop-color="#0a1a1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.4" r="0.65">
+      <stop offset="0" stop-color="#f5c542" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#f5c542" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#f5c542" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="keyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="0.5" stop-color="#f5c542"/>
+      <stop offset="1" stop-color="#c99a1e"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39d6c0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#39d6c0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#39d6c0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dotGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#39d6c0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#39d6c0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- circuit grid background, subtle -->
+  <g stroke="#1c2b3a" stroke-width="1" opacity="0.55">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="760" y1="0" x2="760" y2="360"/>
+    <line x1="920" y1="0" x2="920" y2="360"/>
+  </g>
+
+  <!-- circuit paths connecting into key -->
+  <g stroke="#2b4a54" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M760 60 L820 60 L820 110 L880 110"/>
+    <path d="M760 300 L830 300 L830 250 L890 250"/>
+    <path d="M920 140 L980 140 L980 180"/>
+  </g>
+  <g fill="#39d6c0" opacity="0.9">
+    <circle cx="760" cy="60" r="4"/>
+    <circle cx="820" cy="110" r="4"/>
+    <circle cx="760" cy="300" r="4"/>
+    <circle cx="830" cy="250" r="4"/>
+    <circle cx="920" cy="140" r="4"/>
+  </g>
+
+  <!-- scanning line effect -->
+  <rect x="60" y="330" width="1080" height="2" fill="url(#lineGrad)" opacity="0.5"/>
+
+  <!-- decorative key icon, right side -->
+  <g transform="translate(960,180) rotate(-15)">
+    <circle cx="0" cy="0" r="46" fill="none" stroke="url(#keyGrad)" stroke-width="10"/>
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#1a1408" stroke-width="2" opacity="0.4"/>
+    <rect x="40" y="-9" width="120" height="18" fill="url(#keyGrad)"/>
+    <rect x="120" y="9" width="16" height="26" fill="url(#keyGrad)"/>
+    <rect x="145" y="9" width="16" height="34" fill="url(#keyGrad)"/>
+    <circle cx="0" cy="0" r="20" fill="#0a0e17"/>
+  </g>
+
+  <!-- shield with check, floating small -->
+  <g transform="translate(1055,90)" opacity="0.9">
+    <path d="M0 0 L28 -10 L56 0 L56 30 C56 55 30 68 28 70 C26 68 0 55 0 30 Z" fill="#0d1524" stroke="#39d6c0" stroke-width="2.5"/>
+    <path d="M14 33 L25 45 L44 20" fill="none" stroke="#39d6c0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- small glowing validation nodes -->
+  <circle cx="1010" cy="270" r="10" fill="url(#dotGlow)"/>
+  <circle cx="1010" cy="270" r="3" fill="#39d6c0"/>
+  <circle cx="1075" cy="235" r="8" fill="url(#dotGlow)"/>
+  <circle cx="1075" cy="235" r="2.5" fill="#39d6c0"/>
+
+  <!-- log lines suggestion, thin bars bottom left -->
+  <g opacity="0.5">
+    <rect x="60" y="280" width="140" height="4" fill="#39d6c0"/>
+    <rect x="60" y="292" width="90" height="4" fill="#39d6c0" opacity="0.6"/>
+    <rect x="60" y="304" width="115" height="4" fill="#39d6c0" opacity="0.4"/>
+  </g>
+
+  <!-- Headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="72" fill="#f4f6f7" textLength="740" lengthAdjust="spacingAndGlyphs">
+    KMS Activator
+  </text>
+  <text x="60" y="222" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="72" fill="#f5c542" textLength="230" lengthAdjust="spacingAndGlyphs">
+    2026
+  </text>
+
+  <!-- Tagline -->
+  <text x="60" y="262" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9fb4bd" textLength="900" lengthAdjust="spacingAndGlyphs">
+    Reads license state, processes KMS keys, exports activation logs — no setup
+  </text>
+</svg>
